@@ -68,6 +68,10 @@
 </tr>
 </table>
 
+<h3>Diagrama de Classes</h3>
+
+![DiagramaClasses](https://user-images.githubusercontent.com/114487600/202931583-1b00eaa0-24c2-4d7c-856f-077e5a32866d.png)
+
 <h3>Autor</h3>
 
 Diego Beker
