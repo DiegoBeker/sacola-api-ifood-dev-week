@@ -136,4 +136,19 @@ public class SacolaServiceImpl implements SacolaService {
     sacola.setItens(itensDaSacola);
     return sacolaRepository.save(sacola);
   }
+
+  @Override
+  public Sacola limparSacola(Long id) {
+    Sacola sacola = verSacola(id);
+
+    sacola.getItens().clear();
+    sacola.setValorTotal(0d);
+    return sacolaRepository.save(sacola);
+  }
+
+  @Override
+  public void excluirSacola(Long id) {
+    Sacola sacola = verSacola(id);
+    sacolaRepository.delete(sacola);
+  }
 }

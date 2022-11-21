@@ -35,4 +35,14 @@ public class SacolaResource {
   public Sacola excluirItemDaSacola(@RequestBody ItemDto itemDto) {
     return sacolaService.excluirItemDaSacola(itemDto);
   }
+
+  @PatchMapping("/limparSacola/{sacolaId}")
+  public Sacola limparSacola(@PathVariable("sacolaId") Long sacolaId) {
+    return sacolaService.limparSacola(sacolaId);
+  }
+
+  @DeleteMapping("/excluirSacola/{sacolaId}")
+  public void excluirSacola(@PathVariable("sacolaId") Long id){
+    sacolaService.excluirSacola(id);
+  }
 }

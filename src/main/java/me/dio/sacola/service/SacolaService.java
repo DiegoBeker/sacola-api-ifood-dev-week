@@ -10,4 +10,8 @@ public interface SacolaService {
   Sacola fecharSacola(Long id, int formaPagamento);
 
   Sacola excluirItemDaSacola(ItemDto itemDto);
+
+  Sacola limparSacola(Long id);
+
+  void excluirSacola(Long id);
 }
